@@ -7,8 +7,8 @@ fn main() {
         width: 30,
         height: 50,
     };
-    println!("the area of the rectangle is {} square pixels", area(rect));
+    println!("the area of the rectangle is {} square pixels", area(&rect));
 }
-fn area(cords: Rect) -> u32 {
+fn area(cords: &Rect) -> u32 {
     cords.width * cords.height
 }
