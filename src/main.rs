@@ -10,16 +10,19 @@ impl Rect {
     fn can_hold(&self, other: &Rect) -> bool {
         self.width > other.width && self.height > other.height
     }
+    fn square(size: u32) -> Self {
+        Self {
+            width: size,
+            height: size,
+        }
+    }
 }
 fn main() {
     let rect1: Rect = Rect {
         width: 310,
         height: 250,
     };
-    let rect2: Rect = Rect {
-        width: 40,
-        height: 60,
-    };
+    let rect2: Rect = Rect::square(40);
     println!(
         "the area of the rectangle is {} square pixels",
         rect1.area()
