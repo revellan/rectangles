@@ -13,5 +13,5 @@ fn main() {
         width: 30,
         height: 50,
     };
-    println!("the area of the rectangle is {} square pixels", rect.area())
+    println!("the area of the rectangle is {} square pixels", rect.area());
 }
