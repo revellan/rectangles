@@ -5,11 +5,8 @@ Project from Chapter 5 of the rust book.
 ## Installation:
 ```sh
 #Clone the git repo
-sudo git clone https://github.com/revellan/rectangles
-cd rectangles
-
-#build from source
-make
+sudo git clone https://github.com/revellan/rectangles /opt/rectangles
+cd /opt/rectangles
 
 #install to /usr/local/bin
 sudo make install
